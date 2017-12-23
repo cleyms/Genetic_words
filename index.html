@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Genetic words</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='script.js'></script>
+	<style>
+		body{
+			
+			text-align: center;
+			margin: 10px;
+			padding: 20px;
+			background-color: #444;
+			color: #CCC;
+			border: dashed 2px #CCC;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+		input{
+			color: #CCC;
+			padding: 5px;
+			border: 1px solid #CCC;
+			background-color: #444;
+		}
+		#hr{
+			border-color: #CCC;
+		}
+		button {
+		    background-color: #CCC;
+		    border: none;
+		    color: #444;
+		    padding: 4px 7px;
+		    margin: 2px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 16px;
+		    border-radius: 8px;
+		}
+		#pop {
+			font-family: monospace;
+		}
+		#max {
+			font-family: monospace;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+<div id='UI1'>
+	<h2>Enter a phrase:</h2>
+	<input id='maintxb' type='text' name='userword' placeholder='Example: Good news everyone!' autofocus>
+	<button id='mainbtn' type='button'>Submit</button>
+</div>
+<div id='UI2' hidden>
+<br>
+<hr id='hr' hidden>
+<br>
+<span id='max'></span>
+<br>
+<div id='pop'></div>
+</div>
+
+</body>
+</html>
